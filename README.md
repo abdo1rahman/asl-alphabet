@@ -198,9 +198,6 @@ Status: **planned**. A 64×64 CNN is small enough to run in real time on a lapto
 
 ## Known limitations
 
-- Accuracy on new signers, lighting or cameras is expected to be much lower than the ~100% shuffled-split figure.
-- `J` and `Z` are motion gestures and are only represented by single frames.
-- Similar handshapes (`A`/`M`/`N`/`S`/`T`, `K`/`V`) are hard to tell apart at 64×64.
 - The model classifies one image at a time; it does not model sequences, so it cannot capture motion.
 - The dataset has no signer or session labels. Session boundaries were inferred from brightness changes and verified visually on a sample of classes.
 
